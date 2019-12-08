@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_size">48dp</dimen>
+    <dimen name="text_margin">72dp</dimen>
+    <dimen name="img_wifi_size">108dp</dimen>
+    <dimen name="button_wifi_width">96dp</dimen>
+</resources>
