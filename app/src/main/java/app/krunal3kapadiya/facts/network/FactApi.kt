@@ -1,5 +1,6 @@
 package app.krunal3kapadiya.facts.network
 
+import app.krunal3kapadiya.facts.network.models.Facts
 import io.reactivex.Observable
 import retrofit2.http.GET
 

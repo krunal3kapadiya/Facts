@@ -4,4 +4,5 @@
     <dimen name="text_margin">72dp</dimen>
     <dimen name="img_wifi_size">108dp</dimen>
     <dimen name="button_wifi_width">96dp</dimen>
+    <dimen name="vertical_internet_txt_margin">16dp</dimen>
 </resources>

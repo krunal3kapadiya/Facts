@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import app.krunal3kapadiya.facts.R
-import app.krunal3kapadiya.facts.network.FactsRows
+import app.krunal3kapadiya.facts.network.models.FactsRows
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.row_lists.view.*
 
@@ -44,7 +44,7 @@ class FactsListAdapter(private val factsList: List<FactsRows>) :
                 .with(itemView.context)
                 .load(facts.imageHref)
                 .centerCrop()
-                .placeholder(R.mipmap.ic_launcher)
+                .placeholder(R.drawable.ic_image_gray_24dp)
                 .into(itemView.ivImage)
         }
     }

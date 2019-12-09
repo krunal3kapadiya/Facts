@@ -3,9 +3,9 @@ package app.krunal3kapadiya.facts.ui.factsList
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import app.krunal3kapadiya.facts.network.FactApi
-import app.krunal3kapadiya.facts.network.Facts
-import app.krunal3kapadiya.facts.network.FactsRows
+import app.krunal3kapadiya.facts.network.models.Facts
 import app.krunal3kapadiya.facts.network.NetworkModule
+import app.krunal3kapadiya.facts.network.models.FactsRows
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

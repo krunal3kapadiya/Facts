@@ -15,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import app.krunal3kapadiya.facts.Injection
 import app.krunal3kapadiya.facts.R
-import app.krunal3kapadiya.facts.network.FactsRows
+import app.krunal3kapadiya.facts.network.models.FactsRows
 import kotlinx.android.synthetic.main.activity_facts_list.*
 
 class FactsListActivity : AppCompatActivity() {
