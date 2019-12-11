@@ -3,14 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/vf_list"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.factsList.FactsListActivity">
+    style="@style/MatchContentStyle"
+    tools:context=".ui.factslist.FactsListActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/MatchContentStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -18,17 +16,14 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_fact"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            style="@style/MatchContentStyle" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchContentStyle">
 
         <ProgressBar
             android:id="@+id/pb_loading"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_zero"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/txt_loading"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +33,7 @@
 
         <TextView
             android:id="@+id/txt_loading"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_zero"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/loading"
@@ -48,9 +43,7 @@
             app:layout_constraintTop_toBottomOf="@+id/pb_loading" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchContentStyle">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_no_internet"
@@ -78,7 +71,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_no_internet"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_zero"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/vertical_internet_txt_margin"
             android:gravity="center"

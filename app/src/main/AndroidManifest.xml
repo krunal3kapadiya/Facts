@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="app.krunal3kapadiya.facts.ui.factsList.FactsListActivity">
+        <activity android:name="app.krunal3kapadiya.facts.ui.factslist.FactsListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

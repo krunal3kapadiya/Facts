@@ -1,4 +1,4 @@
-package app.krunal3kapadiya.facts.ui.factsList
+package app.krunal3kapadiya.facts.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

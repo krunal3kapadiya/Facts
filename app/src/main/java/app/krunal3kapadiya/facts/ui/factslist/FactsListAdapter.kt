@@ -1,4 +1,4 @@
-package app.krunal3kapadiya.facts.ui.factsList
+package app.krunal3kapadiya.facts.ui.factslist
 
 import android.view.LayoutInflater
 import android.view.View
@@ -18,23 +18,18 @@ import kotlinx.android.synthetic.main.row_lists.view.*
 class FactsListAdapter(private val factsList: List<FactsRows>) :
     RecyclerView.Adapter<FactsListAdapter.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.row_lists,
-                parent,
-                false
-            )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = ViewHolder(
+        LayoutInflater.from(parent.context).inflate(
+            R.layout.row_lists,
+            parent,
+            false
         )
-    }
+    )
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) =
         holder.bind(factsList[position])
-    }
 
-    override fun getItemCount(): Int {
-        return factsList.size
-    }
+    override fun getItemCount(): Int = factsList.size
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(facts: FactsRows) {
