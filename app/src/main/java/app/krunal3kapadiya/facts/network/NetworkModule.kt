@@ -17,14 +17,12 @@ object NetworkModule {
      * provides fact api
      */
     @JvmStatic
-    fun provideFactsApi(): FactApi {
-        return Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(
-                RxJava2CallAdapterFactory
-                    .createWithScheduler(Schedulers.io())
-            )
-            .build().create(FactApi::class.java)
-    }
+    fun provideFactsApi(): FactApi = Retrofit.Builder()
+        .baseUrl(BuildConfig.BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .addCallAdapterFactory(
+            RxJava2CallAdapterFactory
+                .createWithScheduler(Schedulers.io())
+        )
+        .build().create(FactApi::class.java)
 }
