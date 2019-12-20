@@ -1,4 +1,4 @@
-# Facts [![Build Status](https://travis-ci.org/krunal3kapadiya/Facts.svg?branch=master)](https://travis-ci.org/krunal3kapadiya/Facts)
+# Facts [![Build Status](https://travis-ci.org/krunal3kapadiya/Facts.svg?branch=master)](https://travis-ci.org/krunal3kapadiya/Facts) ![License](https://img.shields.io/github/license/krunal3kapadiya/facts.svg)
 
 ### Summary
 
